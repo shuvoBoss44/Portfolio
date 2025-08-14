@@ -142,7 +142,7 @@ const ContactSection = () => {
               collaborations.
             </motion.p>
 
-            {/* Updated Social Media Icons */}
+            {/* Updated Social Media Icons with responsive sizes */}
             <motion.div
               className="flex justify-center lg:justify-start gap-6 mt-12"
               variants={containerVariants}
@@ -153,9 +153,9 @@ const ContactSection = () => {
                 rel="noopener noreferrer"
                 variants={iconVariants}
                 whileHover={{ scale: 1.2, color: "#22d3ee" }}
-                className="text-gray-400 transition-colors duration-300"
+                className="text-gray-400 transition-colors duration-300 text-3xl md:text-4xl"
               >
-                <FaGithub size={40} />
+                <FaGithub />
               </motion.a>
               <motion.a
                 href="https://wa.me/+8801625490792"
@@ -163,15 +163,16 @@ const ContactSection = () => {
                 rel="noopener noreferrer"
                 variants={iconVariants}
                 whileHover={{ scale: 1.2, color: "#25d366" }}
-                className="text-gray-400 transition-colors duration-300"
+                className="text-gray-400 transition-colors duration-300 text-3xl md:text-4xl"
               >
-                <FaWhatsapp size={40} />
+                <FaWhatsapp />
               </motion.a>
             </motion.div>
           </div>
 
           <motion.div
-            className="lg:w-1/2 w-full p-8 rounded-xl bg-slate-900 shadow-2xl"
+            // Adjusted padding for better mobile fit
+            className="lg:w-1/2 w-full p-6 sm:p-8 rounded-xl bg-slate-900 shadow-2xl"
             variants={formVariants}
           >
             <form onSubmit={handleSubmit} className="space-y-6">

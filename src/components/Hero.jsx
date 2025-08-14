@@ -1,6 +1,6 @@
 // src/components/HeroSection.jsx
 "use client";
-import React, { useEffect, useRef, useState } from "react"; // Added useState
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Typed from "typed.js";
@@ -131,57 +131,57 @@ const HeroSection = () => {
             Building full-stack web applications from front to back with MERN
             stack expertise.
           </motion.p>
-          {/* --- Corrected Social Media Links --- */}
-          <motion.div
-            className="mt-10 flex gap-4 justify-center lg:justify-start"
-            variants={textVariants}
-          >
-            <motion.a
-              href="https://github.com/shuvoBoss44"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#ffff] text-3xl hover:opacity-80 transition-colors duration-300"
-              variants={socialIconVariants}
-              whileHover="hover"
-              whileTap="tap"
-            >
-              <FaGithub />
-            </motion.a>
 
-            <motion.a
-              href="https://wa.me/8801625490792"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#25D366] text-3xl hover:opacity-80 transition-colors duration-300"
-              variants={socialIconVariants}
-              whileHover="hover"
-              whileTap="tap"
-            >
-              <FaWhatsapp />
-            </motion.a>
-          </motion.div>
+          {/* --- Consolidated Socials & Buttons for better mobile spacing --- */}
           <motion.div
-            className="mt-10 flex gap-4 justify-center lg:justify-start"
+            className="mt-10 flex flex-col sm:flex-row items-center gap-6 sm:gap-4 lg:gap-8 justify-center lg:justify-start"
             variants={textVariants}
           >
-            <motion.a
-              href="#projects"
-              className="px-8 py-3 bg-gradient-to-r from-sky-500 to-cyan-600 text-white font-semibold rounded-full shadow-lg transition-all duration-300"
-              variants={buttonVariants}
-              whileHover="hover"
-              whileTap="tap"
-            >
-              Explore My Work
-            </motion.a>
-            <motion.a
-              href="#contact"
-              className="px-8 py-3 border-2 border-sky-400 text-sky-400 font-semibold rounded-full hover:bg-sky-400 hover:text-white transition-all duration-300"
-              variants={buttonVariants}
-              whileHover="hover"
-              whileTap="tap"
-            >
-              Contact Me
-            </motion.a>
+            <div className="flex gap-4">
+              <motion.a
+                href="https://github.com/shuvoBoss44"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#ffff] text-3xl hover:opacity-80 transition-colors duration-300"
+                variants={socialIconVariants}
+                whileHover="hover"
+                whileTap="tap"
+              >
+                <FaGithub />
+              </motion.a>
+
+              <motion.a
+                href="https://wa.me/8801625490792"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#25D366] text-3xl hover:opacity-80 transition-colors duration-300"
+                variants={socialIconVariants}
+                whileHover="hover"
+                whileTap="tap"
+              >
+                <FaWhatsapp />
+              </motion.a>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <motion.a
+                href="#projects"
+                className="px-8 py-3 bg-gradient-to-r from-sky-500 to-cyan-600 text-white font-semibold rounded-full shadow-lg transition-all duration-300"
+                variants={buttonVariants}
+                whileHover="hover"
+                whileTap="tap"
+              >
+                Explore My Work
+              </motion.a>
+              <motion.a
+                href="#contact"
+                className="px-8 py-3 border-2 border-sky-400 text-sky-400 font-semibold rounded-full hover:bg-sky-400 hover:text-white transition-all duration-300"
+                variants={buttonVariants}
+                whileHover="hover"
+                whileTap="tap"
+              >
+                Contact Me
+              </motion.a>
+            </div>
           </motion.div>
         </motion.div>
         <motion.div

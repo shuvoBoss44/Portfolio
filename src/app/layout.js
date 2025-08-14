@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://shuvo.vercel.app"),
+  metadataBase: new URL("https://shuvochakma.vercel.app"),
   title: "Shuvo Chakma | Portfolio",
   description: "Portfolio showcasing my projects, skills, and experience.",
   icons: {
@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     title: "Shuvo Chakma | Portfolio",
     description: "Portfolio showcasing my projects, skills, and experience.",
-    url: "https://shuvo.vercel.app",
+    url: "https://shuvochakma.vercel.app",
     siteName: "Shuvo Chakma Portfolio",
     images: [
       {

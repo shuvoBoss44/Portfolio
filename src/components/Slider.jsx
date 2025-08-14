@@ -24,15 +24,12 @@ const techIcons = [
 ];
 
 const TechStackSlider = () => {
-  // Duplicating the list to create a seamless infinite scroll effect
   const sliderContent = [...techIcons, ...techIcons];
 
   return (
-    <div className="relative w-full overflow-hidden py-5 bg-gray-950 text-white">
-      {/* Scroll container with a linear gradient mask */}
+    <div className="relative w-full overflow-hidden py-3 md:py-5 bg-gray-950 text-white">
       <div className="absolute inset-0 z-20 pointer-events-none bg-gradient-to-r from-gray-950 via-transparent to-gray-950"></div>
 
-      {/* Main slider track */}
       <motion.div
         className="flex animate-scroll"
         style={{ width: `${sliderContent.length * 150}px` }}
@@ -49,11 +46,11 @@ const TechStackSlider = () => {
         {sliderContent.map((tech, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-20 md:w-36 flex flex-col items-center justify-center p-4"
+            className="flex-shrink-0 w-24 md:w-36 flex flex-col items-center justify-center p-2 md:p-4"
           >
             <tech.icon
               className="text-4xl lg:text-5xl opacity-80"
-              style={{ color: tech.color }} // Apply the real color here
+              style={{ color: tech.color }}
             />
             <span className="mt-2 text-sm text-gray-300">{tech.name}</span>
           </div>

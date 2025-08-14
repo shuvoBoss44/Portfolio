@@ -21,9 +21,7 @@ const page = () => {
         <hr className='border-t-2 border-gray-700 my-10' />
         <ProjectsSection />
         <hr className='border-t-2 border-gray-700 my-10' />
-        <StackedSection>
-          <ContactSection />
-        </StackedSection>
+        <ContactSection />
         <div className='mt-10'>
           <TechStackSlider />
         </div>
