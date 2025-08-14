@@ -159,14 +159,14 @@ const ProjectsSection = () => {
                 </p>
                 <div className="flex gap-6 justify-center md:justify-start">
                   {project.liveUrl ? (
-                    <>
-                      <a
-                        href="#" // Updated to a static link to prevent immediate navigation
-                        onClick={e => handleLiveLinkClick(e, project.liveUrl)}
-                        className="flex items-center text-blue-300 hover:text-white transition-transform hover:scale-110"
-                      ></a>
+                    // Corrected the live link structure to be clickable
+                    <a
+                      href="#"
+                      onClick={e => handleLiveLinkClick(e, project.liveUrl)}
+                      className="flex items-center text-blue-300 hover:text-white transition-transform hover:scale-110"
+                    >
                       <FiExternalLink className="mr-2 text-xl" /> Live Demo
-                    </>
+                    </a>
                   ) : (
                     <div className="text-gray-500">Live Demo Unavailable</div>
                   )}
