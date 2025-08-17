@@ -40,6 +40,8 @@ export const metadata = {
     description: "Portfolio showcasing my projects, skills, and experience.",
     images: ["/og-image.png"],
   },
+  name: "google-site-verification",
+  content: "ap8FrSGLyeZOwQnEJbsZAbtAlgeRkUSf3arIwFdYRYY"
 };
 
 export default function RootLayout({ children }) {
